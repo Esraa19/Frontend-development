@@ -1,13 +1,18 @@
 body {
     font-family: arial;
     font-size: 1em;
+    
+}
+
+p {
+    line-height: 130%;
 }
 
 main,
 body > section,
 aside {
     float: left;
-    margin: 0 20px 0 0;
+    margin: 0 3% 0 0;
 }
 
 body > header {
@@ -20,16 +25,12 @@ body > header form {
     top: 0;
 }
 
-main {
-    width: 400px;
-}
-
 body > section {
-    width: 500px;
+    width: 40%;
 }
 
-aside {
-    width: 300px;
+aside, main {
+    width: 25%;
 }
 
 body > footer {
@@ -39,7 +40,7 @@ body > footer {
 }
 
 body > footer section {
-    margin: 0 20px 0 0;
+    margin: 0 3% 0 0;
 }
 
 abbr {
@@ -60,8 +61,7 @@ body aside section {
 
 body main article header h2 {
     text-shadow: 4px 3px #F00900;
-    -webkit-transition: font-size 2s;
-    /* Safari */
+    -webkit-transition: font-size 2s; /* Safari */
     transition: font-size 2s;
 }
 
@@ -88,6 +88,43 @@ main article header p {
     -webkit-column-count: 2;
     -moz-column-count: 2;
     column-count: 2;
+}
+
+@media only screen and (max-width: 1024px) {
+    body > section, main {
+        width: 30%;
+    }
+
+    aside {
+        width: 25%;
+    }
+    main article header p {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    main,
+    body > section,
+    aside {
+        float: none;
+        margin: 0;
+        padding: 10px;
+    }
+    main {
+        width: auto;
+    }
+    body > section {
+        width: auto;
+    }
+    aside {
+        width: auto;
+    }
+    body > footer {
+        display: inline;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -117,39 +154,5 @@ main article header p {
     }
     body > footer {
         display: inline;
-    }
-}
-
-@media only screen and (max-width: 786px) {
-    main,
-    body > section,
-    aside {
-        float: none;
-        margin: 0;
-        padding: 10px;
-    }
-    main {
-        width: auto;
-    }
-    body > section {
-        width: auto;
-    }
-    aside {
-        width: auto;
-    }
-    body > footer {
-        display: inline;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    main {
-        width: 300px;
-    }
-    body > section {
-        width: 300px;
-    }
-    aside {
-        width: 300px;
     }
 }

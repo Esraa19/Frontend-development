@@ -3,20 +3,24 @@ body {
     font-size: 1em;
 }
 
+p {
+    line-height: 140%;
+}
+
 main,
 body > section,
 aside {
     float: left;
-    margin: 0 40px 0 0;
+    margin: 0 3% 0 0;
 }
 
 body > section,
 aside {
-    width: 300px;
+    width: 25%;
 }
 
 main {
-    width: 500px;
+    width: 40%;
 }
 
 body > footer {
@@ -26,13 +30,12 @@ body > footer {
 }
 
 body > footer section {
-    margin: 0 20px 0 0;
+    margin: 0 3% 0 0;
 }
 
 body > header {
     display: flex;
     flex-direction: row-reverse;
-    margin: 20px 0 0;
 }
 
 body > header form {
@@ -59,8 +62,6 @@ header h1:hover {
 }
 
 footer section#about {
-    width: 200px;
-    height: 100px;
     transform: rotate(8deg);
 }
 
@@ -76,6 +77,30 @@ a[rel="bookmark"] {
     display: inline-block;
     padding: 20px;
     background: red;
+}
+
+@media only screen and (max-width: 1024px) {
+    body > section, aside {
+        width: 30%;
+    }
+    main {
+        width: 25%;
+    }
+    main article header p {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    body > section,
+    aside {
+        width: auto;
+    }
+    main {
+        width: auto;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -102,25 +127,5 @@ a[rel="bookmark"] {
         width: auto;
         height: auto;
         transform: none;
-    }
-}
-
-@media only screen and (max-width: 786px) {
-    body > section,
-    aside {
-        width: auto;
-    }
-    main {
-        width: auto;
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    body > section,
-    aside {
-        width: 220px;
-    }
-    main {
-        width: 400px;
     }
 }
