@@ -1,0 +1,207 @@
+body {
+    font-family: arial;
+    font-size: 1em;
+    background-color: #ccc;
+}
+
+body > header, main, body > section, aside {
+    float: left;
+    width: 18%;
+    margin: 0 10px;
+    padding: 0 10px;
+    background-color: #fff;
+}
+
+body > header {
+    width: 13%;
+}
+
+body > header ul {
+    list-style: none;
+    padding: 0;
+}
+
+body > header ul li {
+    text-align: center;
+    margin: 10px 0;
+}
+
+body > header ul li a, p.to-profile a {
+    text-decoration: none;
+    color: #555;
+    padding: 10px;
+    background-color: #ddd;
+    display: block;
+}
+
+body > header ul li:hover a,  p.to-profile:hover a{
+    color: #000;
+    cursor: pointer;
+}
+
+main {
+    width: 39%;
+}
+
+body > footer {
+    clear: both;
+    display: flex;
+}
+/*body {
+    font-family: arial;
+    font-size: 1em;
+    
+}
+
+p {
+    line-height: 130%;
+}
+
+main,
+body > section,
+aside {
+    float: left;
+    margin: 0 3% 0 0;
+}
+
+body > header {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+body > header form {
+    position: absolute;
+    top: 0;
+}
+
+body > section {
+    width: 40%;
+}
+
+aside, main {
+    width: 25%;
+}
+
+body > footer {
+    clear: both;
+    border-top: 1px solid;
+    display: flex;
+}
+
+body > footer section {
+    margin: 0 3% 0 0;
+}
+
+abbr {
+    display: inline-block;
+    padding: 10px;
+    background: yellow;
+}
+
+body > header > h1 {
+    border: 2px solid #a1a1a1;
+    padding: 20px 30px 20px 10px;
+    border-radius: 50px 0;
+}
+
+body aside section {
+    box-shadow: 10px 10px 5px #888888;
+}
+
+body main article header h2 {
+    text-shadow: 4px 3px #F00900;
+    -webkit-transition: font-size 2s; /* Safari *
+    transition: font-size 2s;
+}
+
+body main article header h2:hover {
+    font-size: 5em;
+}
+
+body > header > p {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+    transform: rotate(20deg);
+}
+
+body header nav li:first-child + li a {
+    color: red;
+}
+
+a[href="mailto:m.blekemolen@hva.nl"] {
+    color: green;
+}
+
+main article header p {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+@media only screen and (max-width: 1024px) {
+    body > section, main {
+        width: 30%;
+    }
+
+    aside {
+        width: 25%;
+    }
+    main article header p {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media only screen and (max-width: 786px) {
+    main,
+    body > section,
+    aside {
+        float: none;
+        margin: 0;
+        padding: 10px;
+    }
+    main {
+        width: auto;
+    }
+    body > section {
+        width: auto;
+    }
+    aside {
+        width: auto;
+    }
+    body > footer {
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    main,
+    body > section,
+    aside {
+        float: none;
+        margin: 0;
+        padding: 10px;
+    }
+    body > header {
+        display: inline;
+    }
+    main {
+        width: auto;
+    }
+    body > section {
+        width: auto;
+    }
+    aside {
+        width: auto;
+    }
+    main article header p {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+    body > footer {
+        display: inline;
+    }
+}*/
