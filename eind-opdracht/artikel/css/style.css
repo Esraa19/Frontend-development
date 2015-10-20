@@ -27,6 +27,25 @@ body > header ul li {
     margin: 10px 0;
 }
 
+body > header form {
+    float: left;
+    margin: 0 0 10px 0;
+}
+
+body > header form label input {
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+body > header form button[type="submit"] {
+    float: right;
+}
+
+body > header p.to-profile {
+    clear: both;
+}
+
 body > header ul li a, p.to-profile a, a[rel="bookmark"] {
     text-decoration: none;
     color: #555;
@@ -57,7 +76,6 @@ a[rel="bookmark"] {
 body > footer {
     clear: both;
     display: flex;
-    
     flex-direction: row-reverse;
     background-color: #fff;
 }
