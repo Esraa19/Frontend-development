@@ -78,8 +78,21 @@ body > footer {
     display: flex;
     flex-direction: row-reverse;
     background-color: #fff;
+    -webkit-justify-content: space-between; /* Safari (werk niet) */
+    justify-content:         space-between;
 }
 
+body > footer > * {
+    flex-grow: 1; /* om alle child elementen van de footer een gelijke breede te krijgen (werk niet) */
+    width: 15%;
+    margin: 0 2% 0 0;
+    padding: 0 2%;
+    background: yellow;
+}
+
+body > footer > *:first-child {
+     margin-right: 0;
+}
 /*body {
     font-family: arial;
     font-size: 1em;
