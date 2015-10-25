@@ -6,7 +6,6 @@ html, body {
 body {
     font-family: arial;
     font-size: 100%;
-    -webkit-text-size-adjust: 100%;
     background-color: #ccc;
     display: flex;
     flex-flow: row wrap;
@@ -222,7 +221,11 @@ body > footer section#sitemap ul li ul li a:before {
 @media only screen 
 and (min-device-width : 375px) 
 and (max-device-width : 667px) {
-      body > header h1, body > header p, body > header img, body > header ul, body > header nav {
+	  
+      body {
+		font-size: 300%;
+	  }
+	  body > header h1, body > header p, body > header img, body > header ul, body > header nav {
           position: static;
           float: none;
           margin: 0;
