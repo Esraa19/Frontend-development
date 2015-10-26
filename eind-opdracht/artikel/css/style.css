@@ -202,8 +202,8 @@ body > footer section#sitemap ul li ul li a:before {
 }
 
 @media only screen 
-  and (min-width: 768px) 
-  and (max-width: 1024px)  {
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px)  {
       
       body > header p.to-profile {
           top: 8em;
