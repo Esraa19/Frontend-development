@@ -1,4 +1,4 @@
-html, body {
+ html, body {
     padding: 0;
     margin: 0;
 }
@@ -10,6 +10,24 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+}
+
+ body > main h1 {
+    
+    text-shadow: 3px 2px #ffd700;
+    transition: font-size 2s ease 0s;
+    
+}
+
+ body > main h1:hover {
+    
+font-size: 5em;
+}
+
+main article header p + p { 
+    
+    font-size: smaller; 
+    font-style: italic; 
 }
 
 a {
@@ -26,6 +44,7 @@ video {
     height: auto;
 }
 
+
 main, body > section, aside {
     width: 18%;
     margin: 0 10px;
@@ -38,6 +57,7 @@ main {
     order: 2;
     width: 50%;
 }
+
 aside {
     order: 3;
 }
@@ -226,7 +246,7 @@ and (min-device-width : 375px)
 and (max-device-width : 667px) {
 	  
       body {
-		font-size: 1.4em;
+		font-size: 1em;
 	  }
 	  body > header h1, body > header p, body > header img, body > header ul, body > header nav {
           position: static;
@@ -277,12 +297,7 @@ and (max-device-width : 667px) {
       body > footer #sitemap {
           display: none
       }
-      body > footer input[type="search"] {
-          padding: 0.3em;
-      }
-      body > footer input {
-          font-size: 2em;
-      }
+    
       main section ol {
           margin: 0 0 1em 1em;
       }
