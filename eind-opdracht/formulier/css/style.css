@@ -243,6 +243,14 @@ main form fieldset fieldset legend {
     font-weight: bold;
 }
 
+#project, #stage {
+    display: none;
+}
+
+#project.show, #stage.show  {
+    display: block;
+}
+
 @media only screen 
   and (min-width: 768px) 
   and (max-width: 1024px)  {
