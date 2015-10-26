@@ -203,6 +203,7 @@ main form label span {
     width: 15%;
 }
 main form label input[type="text"], main form label input[type="tel"], main form label input[type="email"], main form label input[type="date"], main form label textarea {
+    font-size: 1vw;
     padding: 5px;
     width: 50%;
 }
@@ -325,8 +326,28 @@ and (max-device-width : 667px) {
       /* formulier */
       main form label input[type="text"], main form label input[type="tel"], main form label input[type="email"], main form label input[type="date"], main form label textarea {
           width: 100%;
+          font-size: 4vw;
       }
-      main form label span {
+      
+      main form label input[type="radio"], main form label input[type="checkbox"] {
+          width: 2em;
+          height: 2em;
+      }
+    
+      main form label span, main form label em, main form label {
           float: none;
+          font-size: 3vw;
+      }
+        
+      main form label em {
+          float: right;
+      }
+      
+      main form fieldset legend {
+           font-size: 3em;
+      }
+    
+      main form fieldset fieldset legend, main form input[type="submit"] {
+          font-size: 2em;
       }
 }
