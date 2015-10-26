@@ -13,6 +13,17 @@ body {
     justify-content: center;
 }
 
+body > main h1 {
+    
+    text-shadow: 4px 3px #ff6600;
+    transition: font-size 2s ease 0s;
+}
+
+ body > main h1:hover {
+    
+font-size: 5em;
+}
+
 a {
     color: #b62222;
 }
