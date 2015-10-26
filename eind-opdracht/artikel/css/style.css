@@ -274,7 +274,7 @@ and (max-device-width : 667px) {
           padding: 0.3em;
       }
       body > footer input {
-          font-size: 1em;
+          font-size: 2em;
       }
       main section ol {
           margin: 0 0 1em 1em;
