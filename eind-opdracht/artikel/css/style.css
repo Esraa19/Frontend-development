@@ -276,4 +276,7 @@ and (max-device-width : 667px) {
       body > footer input {
           font-size: 1em;
       }
+      main section ol {
+          margin: 0 0 1em 1em;
+      }
 }
