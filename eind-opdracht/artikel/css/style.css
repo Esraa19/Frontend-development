@@ -8,7 +8,7 @@ body {
     font-size: 100%;
     background-color: #ccc;
     display: flex;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -63,7 +63,7 @@ body > section {
     width: 72%;
 }
 body > footer {
-    order: 6;
+    order: 5;
 }
 
 body > header {
@@ -90,7 +90,6 @@ body > header nav {
 body > header ul {
     list-style: none;
     padding: 0;
-    float: right;
 }
 
 body > header ul li {
@@ -101,13 +100,12 @@ body > header ul li {
 
 body > header form {
     clear: both;
-    display: flex;
-    justify-content: flex-end;
+    float: right;
     margin: 0.5%;
 }
 
 body > header p.to-profile {
-    top: 10em;
+    top: 8em;
 }
 
 body > header p.to-profile a, body > header p.to-profile a:hover {
@@ -170,12 +168,9 @@ body > footer {
     clear: both;
     display: flex;
     flex-direction: row-reverse;
-    -webkit-justify-content: space-between; /* Safari (werk niet) */
-    justify-content:         space-between;
 }
 
 body > footer > * {
-    flex-grow: 1; /* om alle child elementen van de footer een gelijke breede te krijgen (werk niet) */
     width: 15%;
     padding: 0 2%;
 }
