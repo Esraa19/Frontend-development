@@ -126,16 +126,22 @@ a[rel="bookmark"]:hover {
     cursor: pointer;
 }
 .related > article {
-    float: left;
-    padding: 1.5%;
-    width: 17%;
+    padding: 1em;
+    width: 15%;
+}
+.related > article ul {
+    list-style: none;
+    padding: 0;
+}
+.related > article ul li a { 
+    word-wrap: break-word;
 }
 a[rel="bookmark"] {
     background: #0E2F44;
     color: #fff;
     display: block;
     margin: 1em 0 0 0;
-    padding: 4%;
+    padding: 1em;
     border-radius: 0 2em 2em 0;
 }
 a[rel="bookmark"]:hover {
@@ -210,19 +216,19 @@ main form label {
     display: block;
     width: 100%;
     float: left;
-    margin: 5px 0;
+    margin: 0.5em 0;
     clear: both;
 }
 main form label span {
     float: left;
-    width: 15%;
+    width: 20%;
 }
 main form label input[type="text"],
 main form label input[type="tel"],
 main form label input[type="email"],
 main form label input[type="date"],
 main form label textarea {
-    padding: 5px;
+    padding: 0.5em;
     width: 50%;
 }
 main form label em {
@@ -233,17 +239,17 @@ main form label input[type="radio"] {
 }
 main form label input[type="radio"],
 main form label input[type="checkbox"] {
-    margin: 0 5px 0 20px;
+    margin: 0 0.5em 0 1em;
 }
 main form fieldset#project label span {
-    width: 24%;
+    width: 30%;
 }
 main form fieldset#stage label span {
-    width: 22%;
+    width: 27%;
 }
 main form input[type="submit"] {
     float: right;
-    margin: 10px 0 20px 0;
+    margin: 0.5em 0 1em 0;
 }
 main form fieldset {
     border: 0;
@@ -252,10 +258,10 @@ main form fieldset {
 main form fieldset legend {
     font-size: 1.2em;
     font-weight: bold;
-    margin: 10px 0;
+    margin: 0.5em 0;
 }
 main form fieldset fieldset {
-    margin: 0 0 10px 0;
+    margin: 0 0 0.5em 0;
 }
 main form fieldset fieldset legend {
     font-size: 1em;
@@ -278,6 +284,15 @@ main form fieldset fieldset legend {
     }
     body > section {
         width: 89%;
+    }
+    main form label span {
+        width: 26%;
+    }
+    main form fieldset#project label span {
+        width: 40%;
+    }
+    main form fieldset#stage label span {
+        width: 36%;
     }
 }
 @media screen and (max-width: 51em) {
